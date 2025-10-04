@@ -1,0 +1,15 @@
+const superHeroes: string[]=[]
+
+const heroPower :Array<string>=[]
+
+superHeroes.push("subham")
+
+
+type User={
+    name:string;
+    email:string;
+}
+
+const users: User[]=[];
+
+users.push({name:"subham",email:"8456@gmail.com"})

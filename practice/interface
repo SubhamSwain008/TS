@@ -1,0 +1,38 @@
+//kind of a class
+
+import { number } from "motion"
+
+interface User {
+    readonly DBId:number,
+    email:string,
+    userId:number,
+    googleId?:string,
+    startTrail?:()=>number,
+    endTrail():string,
+    getCoupons?(couponname:string,value:number): 
+    number
+}
+
+//reopening of interface 
+interface User{
+    gitToken:string
+}
+const hitesh:User ={
+    DBId:123,email:"sub@123",userId:1,startTrail:()=> {
+        return 2+2
+    },endTrail:()=>{
+        return "hellow"
+    }
+
+    ,gitToken:"hello"
+}
+
+hitesh.email="hello@321"
+
+
+//inheritance
+
+interface Admin extends User{
+    role:"Admin"
+}
+

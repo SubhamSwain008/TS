@@ -1,0 +1,49 @@
+let score:number | string=33
+
+score="55"
+
+type User={
+    name:string;
+    id:number;
+}
+
+type dev={
+    name:string;
+    id:number;
+    salary:number;
+}
+
+
+let hitesh : User | dev;
+
+hitesh={name:"subham",id:23,salary:23432}
+
+
+//mixed array with 2 data types
+const arr: (string|number)[]=["12",34]
+
+//array of either one datatype
+
+let arr2:string []|number[]=[1234,533]
+
+arr2=["asb","jkl"]
+
+//exact value assigmnet 
+
+let pi:3.14=3.14
+
+// will give error pi=3.2
+
+
+//keeping a perticular oder tuples
+const apiArr:[string,number,boolean]=["hello",45,false]
+
+let rgb:[number,number,number]=[255,255,255]
+
+type arrData=[number,string]
+
+const newArrData:arrData=[22,"subham"]
+
+//ts breaks here 2 years ago , now it is fixed 
+// newArrData.push(false)
+

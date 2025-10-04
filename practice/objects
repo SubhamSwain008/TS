@@ -1,0 +1,59 @@
+const User ={
+    name:"subham",
+    email:"subh@mail",
+    isActive:true
+
+
+}
+
+function createUser({name: string ,isPaid: boolean}):void{
+
+}
+
+createUser({name:"subham",isPaid:false})
+
+//when return type is an object
+
+function createCourse():{name:string}{
+
+    return {name:"react"}
+}
+
+//type aliace
+
+type User ={
+    readonly _id:string;
+    name:string;
+    email:string;
+    isActive:boolean;
+
+
+}
+
+function createuser1(user:User){
+}
+
+let subham:User={
+  _id:"1234",
+  name:"subham",
+  email:"su@mail",
+  isActive:false
+}
+subham._id="8783"//canot be assigned 
+subham.name="Khrabela"
+
+
+type cardNumber={
+    cardnumber:number
+}
+
+type cardDate={
+    cardDate:string
+}
+
+type Card=cardNumber& cardDate
+
+
+
+
+export{}
